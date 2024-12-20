@@ -98,12 +98,15 @@ export const Projects = () => {
                     : `${truncated}...`}
                 </motion.p>
                 {isTruncated && (
-                  <button
+                  <motion.button
+                    whileInView={{ opacity: 1, x: 0 }}
+                    initial={{ opacity: 0, x: +100 }}
+                    transition={{ duration: 2 }}
                     onClick={() => setShowMore(!showMore)}
                     className=" text-sm text-white hover:underline mb-2"
                   >
                     {showMore ? "Show Less <" : "Show More >"}
-                  </button>
+                  </motion.button>
                 )}
                 <div className="flex flex-wrap justify-start items-start">
                   {project.technologies.map((tech, index) => (
