@@ -5,7 +5,7 @@ import { MdOutlineMail } from "react-icons/md";
 
 export const Navbar = () => {
   return (
-    <nav className="px-4 flex items-center justify-between py-2">
+    <nav className="px-4 lg:px-16 flex items-center justify-between py-2">
       <div className='flex flex-shrink-0 items-center'>
         <a href="/" aria-label='Home'>
         <img src={logo} alt='Logo' className='w-[2.5rem] h-[2.5rem]'/>
