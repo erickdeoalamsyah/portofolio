@@ -10,7 +10,7 @@ import dataScience from "../assets/projects/datascience.png"
 import dataScienceV from "../assets/projects/datascience.mp4"
 import glhtml from "../assets/certifications/GL-FEhtml.png";
 import glreact from "../assets/certifications/GL-react.png";
-import hrreact from "../assets/certifications/HR-FEReact.png";
+import hrreact from "../assets/certifications/HR-FEreact.png";
 import hrproblemsolving from "../assets/certifications/HR-problemsolving.png";
 import hrreactbasic from "../assets/certifications/HR-reactbasic.png";
 import hrse from "../assets/certifications/HR-se-intern.png";
