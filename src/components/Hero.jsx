@@ -22,7 +22,7 @@ const childVariants = {
 
 export const Hero = () => {
   return (
-    <div className="px-2 mb-20 lg:py-[4rem] lg:mb-20">
+    <div className="px-2 mb-20 lg:py-[4rem] lg:px-16 lg:mb-20">
       <div className="flex flex-wrap lg:flex-row-reverse">
         <div className="w-full lg:w-1/2">
           <div className="flex justify-center  ">
