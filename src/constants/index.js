@@ -57,8 +57,8 @@ export const PROJECTS = [
     description:
       "Weather Explorer is an interactive weather app delivering real-time forecasts with a sleek and modern design. Powered by Vite, React.js, and Tailwind CSS, it integrates the OpenWeatherMap API to provide detailed data, including temperature, wind speed, visibility, and hourly predictions. The app offers a seamless switch between light and dark themes for a personalized experience and allows users to search weather conditions for any city or country effortlessly.",
     technologies: ["Vite","React.js", "Tailwind CSS", "HTML5", "JavaScript", "OpenWeatherMap API"],
-    githubLink: "https://github.com/erickdeoalamsyah/my-weather-app",
-    websiteLink: "https://my-weather-app-rust.vercel.app/",
+    githubLink: "https://github.com/erickdeoalamsyah/cuaca",
+    websiteLink: "https://celciusweather.vercel.app/",
   },
   {
     title: "DISNEY FILM",
