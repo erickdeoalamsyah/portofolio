@@ -3,11 +3,13 @@ import cuaca from "../assets/projects/cuaca.png";
 import todolist from "../assets/projects/todolist.png";
 import disney from "../assets/projects/mydisney.png";
 import isonedayV from "../assets/projects/isoneday.mp4";
+import finansia from "../assets/projects/finansia.png";
+import finansiaV from "../assets/projects/finansiaV.mp4";
 import cuacaV from "../assets/projects/cuaca.mp4";
 import todolistV from "../assets/projects/todolist.mp4";
 import disneyV from "../assets/projects/mydisney.mp4";
-import dataScience from "../assets/projects/datascience.png"
-import dataScienceV from "../assets/projects/datascience.mp4"
+import gradientcss from "../assets/projects/gradientcss.png"
+import gradientcssV from "../assets/projects/gradientcssV.mp4"
 import glhtml from "../assets/certifications/GL-FEhtml.png";
 import glreact from "../assets/certifications/GL-react.png";
 import hrreact from "../assets/certifications/HR-FEreact.png";
@@ -41,14 +43,14 @@ export const PROJECTS = [
     websiteLink: "https://isoneday.vercel.app/",
   },
   {
-    title: "ALUMNI INCOME CLASSIFICATION ON TRACER STUDY DATA USING MACHINE LEARNING",
-    image: dataScience,
-    video: dataScienceV,
+    title: "FINANSIA MONEY MANAGER",
+    image: finansia,
+    video: finansiaV,
     description:
-      "This project focused on analyzing Telkom University alumni income levels using Tracer Study Data to identify 7 key variables influencing income predictions. By leveraging Support Vector Machine (SVM) and Logistic Regression, I developed and evaluated high-accuracy classification models. The workflow included comprehensive data preprocessing, feature selection, and insightful visualizations created with Python libraries such as Pandas, Scikit-learn, Matplotlib, and Seaborn, executed on Google Colab. The results provided critical insights into variable significance, offering valuable recommendations for stakeholders to support institutional decision-making and alumni success.",
-    technologies: ["Google Colab", "Pandas & NumPy","Python","Matplotlib & Seaborn", "Scikit-learn", "Support Vector Machine", "Logistic Regression"],
-    githubLink: "https://colab.research.google.com/drive/1WliQHuzvzbFSg3VaNagyNl_X1zVOGgDA?usp=sharing",
-    websiteLink: "https://colab.research.google.com/drive/1WliQHuzvzbFSg3VaNagyNl_X1zVOGgDA?usp=sharing",
+      "Money Manager is a responsive and dynamic financial tracking application inspired by mobile money manager apps, built with React.js and Tailwind CSS, featuring local storage integration for persistent data management. The project showcases my front-end development expertise, including UI/UX optimization, state management (useState & useEffect), and dynamic component-based architecture. Key features include daily, calendar, and statistics views, interactive charts using Chart.js, advanced search and filtering, and a mobile-responsive design. With smooth UI interactions like a modal-based search bar, a sidebar settings panel, and animated transaction updates, this project highlights my ability to build efficient, maintainable, and visually appealing web applications focused on user experience and performance.",
+    technologies: ["Vite", "React.js","Tailwind CSS","Chart.js", "JavaScript"],
+    githubLink: "https://github.com/erickdeoalamsyah/Finansia",
+    websiteLink: "https://finansia.vercel.app/",
   },
   {
     title: "WEATHER EXPLORER",
@@ -69,6 +71,16 @@ export const PROJECTS = [
     technologies: ["Vite", "React.js", "Tailwind CSS", "HTML5", "JavaScript", "TMDB API"],
     githubLink: "https://github.com/erickdeoalamsyah/my-disneyfilm",
     websiteLink: "https://my-disneyfilm.vercel.app/",
+  },
+  {
+    title: "GRADIENT CSS PICKER",
+    image: gradientcss,
+    video: gradientcssV,
+    description:
+      "An interactive web application that allows users to create, customize, and export gradient codes in both standard CSS and Tailwind CSS formats. This project features a modern and responsive UI, equipped with live preview, color picker, gradient direction selector, random gradient generator, and export functionality to seamlessly integrate gradients into other projects. Utilizing React.js for state management, Tailwind CSS for modular styling, Framer Motion for smooth animations, Clipboard API for instant code copying, and Vite.js for fast builds, this application demonstrates my expertise in building interactive, dynamic, and optimized UI for various devices.",
+    technologies: ["Vite", "React.js","Tailwind CSS","Clipboard API", "JavaScript"],
+    githubLink: "https://github.com/erickdeoalamsyah/gradientpicker",
+    websiteLink: "https://gradientpickercss.vercel.app/",
   },
   {
     title: "TODOLIST ",

@@ -23,17 +23,17 @@ export const Navbar = () => {
         target='_blank'
         rel='noopener noreferrer'
         aria-label='github'
-        className='hover:scale-150 transition-all duration-200 ease-in-out hover:text-white'>
+        className='hover:scale-150 transition-all duration-200 ease-in-out hover:shadow-lg hover:text-orange-600'>
           <FaGithub/>
         </a>
         <a href="https://www.instagram.com/erickdeoalamsyah/"
         target='_blank'
         rel='noopener noreferrer'
         aria-label='Instagram'
-        className='hover:scale-150 transition-all duration-200 ease-in-out'>
+        className='hover:scale-150 transition-all duration-200 ease-in-out hover:text-orange-900'>
           <FaInstagram/>
         </a>
-        <a href="https://www.linkedin.com/in/eric-deo-alamsyah-b8817b293/"
+        <a href="erickdeo29@gmail.com"
         target='_blank'
         rel='noopener noreferrer'
         aria-label='Email'
