@@ -20,7 +20,7 @@ export const Projects = () => {
   const isOdd = PROJECTS.length % 2 !== 0;
 
   return (
-    <div className="px-4 pb-4">
+    <div id="project" className="pb-4 container mx-auto max-w-screen-xl px-6 md:px-10 lg:px-16">
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
@@ -66,12 +66,12 @@ export const Projects = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 initial={{ opacity: 0, x: +100 }}
                 transition={{ duration: 1 }}
-                className="p-4 border-t border-gray-500 flex flex-col flex-grow"
+                className="p-4 border-t border-gray-500 flex flex-col flex-grow bg-black bg-opacity-50 shadow-lg z-50"
               >
                 <h3 className="text-[clamp(1rem, 2vw, 2.5rem)] font-semibold text-white border-b border-gray-500 pb-2">
                   {project.title}
                 </h3>
-                <p className="text-sm text-gray-400 flex-grow mt-2 text-justify">
+                <p className="text-sm text-gray-400 flex-grow mt-2 text-justify ">
                   {showMore || !isTruncated
                     ? project.description
                     : `${truncated}...`}
@@ -80,7 +80,7 @@ export const Projects = () => {
                   {isTruncated && (
                     <button
                       onClick={() => setShowMore(!showMore)}
-                      className="text-sm text-left text-blue-400 hover:underline"
+                      className="text-sm text-left text-blue-500 hover:underline"
                     >
                       {showMore ? "Show less <" : "Show more >"}
                     </button>
@@ -110,7 +110,7 @@ export const Projects = () => {
                       whileInView={{ opacity: 1, x: 0 }}
                       initial={{ opacity: 0, x: +100 }}
                       transition={{ duration: 2.5 }}
-                      className="border border-gray-500  p-2 text-xs text-gray-300 rounded-lg"
+                      className="border border-gray-500  p-2 text-xs text-gray-300 rounded-lg "
                       key={index}
                     >
                       {tech}
@@ -122,22 +122,21 @@ export const Projects = () => {
           );
         })}
         {isOdd && (
-          <motion.div
-            whileInView={{ opacity: 1, scale: 1, rotate: 360 }}
-            initial={{ opacity: 0, scale: 0.5, rotate: 0 }}
-            transition={{ duration: 1.5, ease: "easeInOut" }}
-            className="flex flex-col justify-center items-center h-full bg-gradient-to-r from-purple-600 to-blue-600 rounded-2xl shadow-lg border border-gray-500 p-6 text-white text-lg text-center animate-pulse"
-          >
-            <motion.div
-              animate={{ opacity: [0, 1, 0], scale: [1, 1.2, 1] }}
-              transition={{ duration: 1.5, repeat: Infinity }}
-              className="flex flex-col items-center gap-2"
-            >
-              <FaRocket className="text-4xl text-white animate-bounce" />
-              <p className="text-2xl font-bold">Coming Soon...</p>
-              <FaHourglassHalf className="mt-2 text-4xl text-white animate-spin" />
-            </motion.div>
-          </motion.div>
+    <div
+    className="flex flex-col justify-center items-center h-full bg-transparent  p-6 text-lg text-center"
+  >
+    <motion.div
+      animate={{ opacity: [0, 1, 0], scale: [1, 1.2, 1] }}
+      transition={{ duration: 1.5, repeat: Infinity }}
+      className="flex flex-col items-center gap-2"
+    >
+      <FaHourglassHalf className="mb-2 text-4xl  bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500 animate-spin" />
+      <p className="text-xl font-medium text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500">
+        COMING SOON...
+      </p>
+      <FaHourglassHalf className="mt-2 text-4xl  bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500 animate-spin" />
+    </motion.div>
+  </div>
         )}
       </div>
     </div>

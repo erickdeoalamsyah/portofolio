@@ -34,12 +34,12 @@ const technologies = [
 
 export const Technology = () => {
   return (
-    <div className="pb-20">
+    <div id="tech" className="pb-20 container mx-auto max-w-screen-xl px-6 md:px-10 lg:px-16">
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 1.5 }}
-        className="pt-20 text-center text-2xl lg:text-3xl border-b border-gray-500 py-2"
+        className=" pt-[15rem] text-center text-2xl lg:text-3xl border-b border-gray-500 py-2"
       >
         TECHNOLOGIES
       </motion.h2>
@@ -47,7 +47,7 @@ export const Technology = () => {
         whileInView={{ opacity: 1, x: 0 }}
         initial={{ opacity: 0, x: -100 }}
         transition={{ duration: 2.5 }}
-        className="pt-[10rem] flex flex-wrap items-center justify-center gap-8"
+        className="pt-[10rem] flex flex-wrap items-center justify-center gap-5"
       >
         {technologies.map((tech, index) => (
           <motion.div
@@ -62,7 +62,7 @@ export const Technology = () => {
           </motion.div>
         
           <span
-            className="absolute top-[100%] mt-2 text-gray-400 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"
+            className="absolute top-[100%] mt-2 text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"
           >
             {tech.name}
           </span>

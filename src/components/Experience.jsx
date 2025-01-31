@@ -4,7 +4,7 @@ import {motion} from 'framer-motion'
 
 export const Experience = () => {
   return (
-    <div className="px-2 py-20 pb-4">
+    <div id='experience' className="py-20 pb-4 container mx-auto max-w-screen-xl px-6 md:px-10 lg:px-16">
         <motion.h2 
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
@@ -14,7 +14,7 @@ export const Experience = () => {
         </motion.h2>
         <div>
             {EXPERIENCES.map((experience, index)=>(
-                <div key={index} className='mb-8 flex flex-wrap lg:justify-center'>
+                <div key={index} className='mb-8 flex flex-wrap lg:justify-center '>
                     <motion.div 
                     whileInView={{ opacity: 1, x: 0 }}
                     initial={{ opacity: 0, x: -100 }}
@@ -39,7 +39,7 @@ export const Experience = () => {
                     whileInView={{ opacity: 1, x: 0 }}
                     initial={{ opacity: 0, x: 100 }}
                     transition={{ duration: 1.5 }}
-                    className='text-justify mb-4 text-gray-400'>
+                    className='text-justify mb-4 text-gray-300'>
                         {experience.description}
                     </motion.p>
                     <motion.div

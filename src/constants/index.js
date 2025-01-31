@@ -1,12 +1,10 @@
 import isoneday from "../assets/projects/isoneday.png";
 import cuaca from "../assets/projects/cuaca.png";
-import todolist from "../assets/projects/todolist.png";
 import disney from "../assets/projects/mydisney.png";
 import isonedayV from "../assets/projects/isoneday.mp4";
 import finansia from "../assets/projects/finansia.png";
 import finansiaV from "../assets/projects/finansiaV.mp4";
 import cuacaV from "../assets/projects/cuaca.mp4";
-import todolistV from "../assets/projects/todolist.mp4";
 import disneyV from "../assets/projects/mydisney.mp4";
 import gradientcss from "../assets/projects/gradientcss.png"
 import gradientcssV from "../assets/projects/gradientcssV.mp4"
@@ -17,16 +15,14 @@ import hrproblemsolving from "../assets/certifications/HR-problemsolving.png";
 import hrreactbasic from "../assets/certifications/HR-reactbasic.png";
 import hrse from "../assets/certifications/HR-se-intern.png";
 
-export const HERO_CONTENT = `A results-driven individual specializing in Front-End Development with a passion for creating responsive, interactive, and user-friendly web interfaces. Expert in translating design concepts into functional applications, ensuring seamless user experiences (UX) and high performance. Known for being a fast learner, adaptable to new technologies, and delivering solutions that meet project requirements. Strong communication and collaboration skills, enabling effective teamwork in dynamic and cross-functional environments. Dedicated to bringing creativity, technical expertise, and a problem-solving mindset to every project.`;
-
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
+export const HERO_CONTENT = `Front-End Developer with expertise in React.js, Next.js, Tailwind CSS, and API Integration, specializing in building responsive, high performance, and scalable web applications. Proven ability to optimize UI/UX implementations, improve API efficiency by 25%, and reduce bounce rates by 10%. Experienced in state management, performance tuning, and ensuring seamless cross-device user experiences. A fast learner with attention to detail, skilled in collaborating with UI/UX and backend teams to develop user-friendly applications.`;
 
 export const EXPERIENCES = [
   {
     year: "July - September 2023 ",
-    role: "Mobile Developer",
-    company: "Techno Infinity",
-    description: `During my internship as a Mobile Android Developer, I successfully completed the redesign process of the UI for a project using Flutter and Android Studio. In this role, I implemented the redesigned UI provided by the UI/UX team into a fully functional and responsive interface, ensuring it met the expected design standards. I actively participated in daily checkpoint meetings to monitor progress, address technical challenges, and collaborate effectively with the team. Additionally, I consistently utilized Git for version control, maintaining code integrity and ensuring smooth development processes. This achievement highlights my ability to translate designs into high-performing, real-world applications.`,
+    role: "Mobile Developer Internship",
+    company: "PT. Techno Infinity",
+    description: `Successfully implemented a complete UI redesign for the Workspace App, following the design guidelines provided by the UI/UX team, using Flutter & React Native to enhance responsiveness and improve navigation flow. Optimized app performance by reducing load times by 15% through lazy loading and efficient resource management, ensuring a smoother user experience. Collaborated closely with UI/UX designers and backend developers to maintain consistency between design and functionality, while leveraging Git & GitHub for version control to streamline workflow, minimize code conflicts, and improve overall team efficiency.`,
     technologies: ["Flutter", "Android Studio", "Git"],
   },
 ];
@@ -82,53 +78,50 @@ export const PROJECTS = [
     githubLink: "https://github.com/erickdeoalamsyah/gradientpicker",
     websiteLink: "https://gradientpickercss.vercel.app/",
   },
-  {
-    title: "TODOLIST ",
-    image: todolist,
-    video: todolistV,
-    description:
-      "This To-Do List project is a dynamic and user-friendly task management application built with React.js, Vite, and Tailwind CSS. It includes features such as task creation with customizable names and deadlines, real-time status updates (complete/incomplete), and the ability to edit or delete tasks. The app automatically adjusts to the current day and allows users to start new tasks daily or edit the day's name. Tasks are marked overdue with notifications if they aren't completed on time, ensuring efficient time management. With a sleek dark and light mode toggle, this application is both functional and visually appealing.",
-    technologies: ["Vite", "React.js", "Tailwind CSS", "HTML5", "JavaScript"],
-    githubLink: "https://github.com/erickdeoalamsyah/todolist-app",
-    websiteLink: "https://my-todolist-vert.vercel.app/",
-  },
+  
 ];
 
 export const CERTIFICATIONS = [
   {
-    title: "Frontend Developer (React) Certification",
+    title: "Frontend Developer (React) ",
     issuer: "HackerRank",
     date: "2024",
+    desc: "Demonstrates expertise in React.js, including component-based architecture, state management, and performance optimization.",
     image: hrreact, 
   },
   {
     title: "Software Engineer Intern",
     issuer: "HackerRank",
     date: "2024",
+    desc: "Validates problem-solving skills, debugging techniques, and ability to implement scalable web solutions in a development environment.",
     image: hrse,
   },
   {
-    title: "React (Basic) Certification",
+    title: "React (Basic)",
     issuer: "HackerRank",
     date: "2024",
+    desc: "Covers fundamental React concepts, including JSX, props, hooks, and component lifecycle.",
     image: hrreactbasic,
   },
   {
     title: "Problem Solving (Basic)",
     issuer: "HackerRank",
     date: "2024",
+    desc: "Verifies problem-solving ability in algorithm design, logic building, and code efficiency using JavaScript.",
     image: hrproblemsolving,
   },
   {
     title: "React JS tutorial",
     issuer: "Great Learning",
     date: "2024",
+    desc: "Provides practical experience in building dynamic and interactive web applications using React.js.",
     image: glreact,
   },
   {
-    title: "Frontend Development - HTML certification",
+    title: "Frontend Development - HTML ",
     issuer: "Great Learning",
     date: "2024",
+    desc: "Covers HTML best practices, semantic elements, and web page structuring for accessibility and SEO.",
     image: glhtml,
   },
 ];

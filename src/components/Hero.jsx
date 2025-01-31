@@ -1,90 +1,144 @@
 import React from "react";
-import profile from "../assets/profile-eric.png";
-import { HERO_CONTENT } from "../constants";
+import { Typewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
 
-const containerVariants = {
-  hidden: { opacity: 0, x: -100 },
-  visible: {
-    opacity: 1,
-    x: 0,
+const iconVariants = {
+  initial: { y: -10 },
+  animate: {
+    y: [10, -10],
     transition: {
       duration: 2,
-      staggerChildren: 0.5,
+      ease: "linear",
+      repeat: Infinity,
+      repeatType: "reverse",
     },
   },
 };
 
-const childVariants = {
-  hidden: { opacity: 0, x: -100 },
-  visible: { opacity: 1, x: 0, transition: { duration: 1 } },
-};
-
-export const Hero = () => {
+export default function PortfolioHero() {
   return (
-    <div className="px-2 mb-20 lg:py-[4rem] lg:px-16 lg:mb-20">
-      <div className="flex flex-wrap lg:flex-row-reverse">
-        <div className="w-full lg:w-1/2">
-          <div className="flex justify-center  ">
-            <motion.img
-              src={profile}
-              alt="Eric Deo"
-              className="
-      border border-blue-200 rounded-3xl 
-      hover:shadow-lg hover:shadow-blue-600
-      hover:border-blue-700
-      w-full h-auto 
-      sm:w-[20rem] sm:h-[25rem] 
-      md:w-[20rem] md:h-[25rem] 
-      lg:w-[25rem] lg:h-[30rem]
-      "
-              
-              initial={{ x: +100, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 2 }}
-            />
+    <div className="md:pt-[10rem] flex items-center">
+      <div className="container mx-auto max-w-screen-xl px-4 md:px-10 lg:px-16 py-10 flex flex-col lg:flex-row items-center justify-between gap-5">
+        
+        {/* Left Section */}
+        <motion.div 
+          className="space-y-12"
+          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, x: -100 }}
+          transition={{ duration: 1, ease: "easeInOut" }}
+        >
+          <div className="text-center lg:text-left space-y-6"> 
+            <h1 className="text-3xl lg:text-5xl text-white space-y-4"> 
+              <motion.div
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, delay: 0.3 }}
+              >
+                Hello <span className="text-4xl">👋</span>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, delay: 0.6 }}
+              >
+                <span className="font-semibold">I'm Eric Deo Alamsyah</span>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, delay: 0.9 }}
+              >
+                As{" "}
+                <span className="bg-gradient-to-r from-blue-500 via-green-400 to-indigo-500 bg-clip-text text-transparent">
+                  <Typewriter
+                    words={["FrontEnd Developer", "Mobile Developer"]}
+                    loop={true} 
+                    cursor
+                    cursorStyle="_"
+                    typeSpeed={100} 
+                    deleteSpeed={50} 
+                  />
+                </span>
+              </motion.div>
+            </h1>
           </div>
-        </div>
-        <div className="w-full lg:w-1/2">
-          <motion.div
-            initial="hidden"
-            animate="visible"
-            variants={containerVariants}
-            className="flex flex-col items-center lg:items-start mt-7"
+
+          {/* Buttons */}
+          <motion.div 
+            className="flex gap-4"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.2, delay: 1.2, ease: "easeInOut" }}
           >
-            <motion.h2
-              variants={childVariants}
-              className="text-white pb-2 text-3xl lg:text-4xl"
-            >
-              ERIC DEO ALAMSYAH
-            </motion.h2>
-            <motion.span
-              variants={childVariants}
-              className="text-lg lg:text-xl text-white"
-            >
-              Front End Developer
-            </motion.span>
-            <motion.p
-              variants={childVariants}
-              className="text-justify text-gray-500 py-4 text-md lg:text-lg lg:text-left lg:text-justify leading-relaxed "
-            >
-              {HERO_CONTENT}
-            </motion.p>
-            {/* <motion.a
-              variants={childVariants}
-              href="/resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              download
-              className="rounded-md border-2 border-gray-500 p-3 lg:text-sm text-white hover:shadow-md hover:shadow-blue-600 hover:border-blue-600 "
-            >
-              Download CV
-            </motion.a> */}
+            <a href="#project" className="inline-flex items-center text-sm px-6 py-2 bg-gradient-to-r from-blue-500 via-green-400 to-indigo-500 bg-clip-text text-transparent font-medium rounded-lg shadow-md border border-indigo-400 hover:text-white hover:border-blue-600 transition-all duration-300 ">
+              MY PROJECTS
+            </a>
+            <a href="#contact" className="inline-flex items-center text-sm px-6 py-2 bg-gradient-to-r from-blue-500 via-green-400 to-indigo-500 bg-clip-text text-transparent font-medium rounded-lg shadow-md border border-indigo-400 hover:text-white hover:border-blue-600 transition-all duration-300">
+              GET IN TOUCH
+            </a>
           </motion.div>
-        </div>
+        </motion.div>
+
+        {/* Right Section - Code Block */}
+        <motion.div 
+          className="w-full lg:w-1/2"
+          whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, x: +100 }}
+        transition={{ duration: 2.5 }}
+        >
+          <motion.div className="bg-black bg-opacity-70 rounded-lg overflow-hidden border border-gray-800"
+          initial="initial"
+          animate="animate"
+          variants={iconVariants}>
+            {/* Window Controls */}
+            <div className="flex gap-1 items-center px-4 py-2 border-b border-gray-800">
+              <div className="w-3 h-3 rounded-full bg-red-500" />
+              <div className="w-3 h-3 rounded-full bg-yellow-500" />
+              <div className="w-3 h-3 rounded-full bg-green-500" />
+            </div>
+
+            {/* Code Content */}
+            <div className="p-4 font-mono text-sm text-white">
+              <pre>
+                <code>
+                  <span className="text-pink-500">const</span> 
+                  <span className="text-blue-400"> coder</span> 
+                  <span className="text-white"> = </span> 
+                  <span className="text-gray-400">{"{"}</span>
+                  <br />
+                  <span className="pl-4 text-purple-400">name:</span> 
+                  <span className="text-yellow-300"> 'Eric Deo Alamsyah'</span>,
+                  <br />
+                  <span className="pl-4 text-purple-400">skills:</span> 
+                  <span className="text-gray-400">[</span>
+                  <span className="text-yellow-300">'React'</span>, 
+                  <span className="text-yellow-300">'NextJS'</span>, 
+                  <span className="text-yellow-300">'Laravel11'</span>, 
+                  <br />
+                  <span className="pl-8 text-yellow-300">'TailwindCSS'</span>, 
+                  <span className="text-yellow-300">'API'</span>, 
+                  <span className="text-yellow-300">'JavaScript'</span>, 
+                  <span className="text-yellow-300">'Git'</span>
+                  <span className="text-gray-400">]</span>,
+                  <br />
+                  <span className="pl-4 text-purple-400">hardWorker:</span> 
+                  <span className="text-orange-500"> true</span>,
+                  <br />
+                  <span className="pl-4 text-purple-400">quickLearner:</span> 
+                  <span className="text-orange-500"> true</span>,
+                  <br />
+                  <span className="pl-4 text-purple-400">problemSolver:</span> 
+                  <span className="text-orange-500"> true</span>,
+                  <br />
+                  <span className="text-gray-400">{"};"}</span>
+                </code>
+              </pre>
+            </div>
+          </motion.div>
+        </motion.div>
       </div>
     </div>
   );
-};
-
-export default Hero;
+}
