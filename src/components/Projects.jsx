@@ -22,7 +22,7 @@ export const Projects = () => {
   return (
     <div id="project" className="pb-4 container mx-auto max-w-screen-xl px-6 md:px-10 lg:px-16">
       <motion.h2
-        whileInView={{ opacity: 1, y: 0 }}
+        whileInView={{ opacity: 1, y: 0 }} 
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 1.5 }}
         className="my-20 text-center text-2xl lg:text-3xl border-b border-gray-500 py-2"

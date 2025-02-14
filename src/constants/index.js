@@ -1,7 +1,7 @@
-import isoneday from "../assets/projects/isoneday.png";
+import brand from "../assets/projects/brand.png";
 import cuaca from "../assets/projects/cuaca.png";
 import disney from "../assets/projects/mydisney.png";
-import isonedayV from "../assets/projects/isoneday.mp4";
+import brandV from "../assets/projects/brand.mp4";
 import finansia from "../assets/projects/finansia.png";
 import finansiaV from "../assets/projects/finansiaV.mp4";
 import cuacaV from "../assets/projects/cuaca.mp4";
@@ -30,13 +30,13 @@ export const EXPERIENCES = [
 export const PROJECTS = [
   {
     title: "E-COMMERCE ISONEDAY BRAND",
-    image: isoneday,
-    video: isonedayV,
+    image: brand,
+    video: brandV,
     description:
       "This e-commerce platform is designed to deliver a seamless shopping experience tailored to a local streetwear brand. The website features a responsive and user-centric design, optimized for both mobile and desktop users, with an emphasis on intuitive navigation and aesthetic appeal. Key functionalities include interactive hero sliders, dynamic product pages, hover effects, and smooth-scrolling carousels, creating an engaging and visually appealing interface. Built using React.js and Tailwind CSS, the platform leverages modern web technologies to ensure high performance and responsiveness. Integrated with secure third-party platforms, it simplifies transactions, enabling fast and secure purchases for customers. Its minimalist and mobile-first layout embodies professionalism and ease of use, aligning perfectly with the brand’s identity.",
     technologies: ["Vite","React.js","Tailwind CSS", "HTML5", "JavaScript"],
-    githubLink: "https://github.com/erickdeoalamsyah/isoneday-brand",
-    websiteLink: "https://isoneday.vercel.app/",
+    githubLink: "https://github.com/erickdeoalamsyah/ecommerce-Isoneday-brand",
+    websiteLink: "https://ecommerce-isoneday-brand.vercel.app/",
   },
   {
     title: "FINANSIA MONEY MANAGER",
