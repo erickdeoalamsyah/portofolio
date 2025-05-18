@@ -15,7 +15,7 @@ import hrproblemsolving from "../assets/certifications/HR-problemsolving.png";
 import hrreactbasic from "../assets/certifications/HR-reactbasic.png";
 import hrse from "../assets/certifications/HR-se-intern.png";
 
-export const HERO_CONTENT = `Front-End Developer with expertise in React.js, Next.js, Tailwind CSS, and API Integration, specializing in building responsive, high performance, and scalable web applications. Proven ability to optimize UI/UX implementations, improve API efficiency by 25%, and reduce bounce rates by 10%. Experienced in state management, performance tuning, and ensuring seamless cross-device user experiences. A fast learner with attention to detail, skilled in collaborating with UI/UX and backend teams to develop user-friendly applications.`;
+export const HERO_CONTENT = `Fullstack Website Developer with strong expertise in building scalable, user-centric web applications using modern technologies. Experienced with React.js, Next.js, and Tailwind CSS for developing responsive frontends, and Node.js with Express.js for building robust, secure backends. Proven track record of improving API performance by 25%, reducing bounce rate by 10%, and streamlining deployment through CI/CD pipelines with GitHub Actions, Prometheus, and Grafana. Solid understanding of API integration, web security fundamentals, automated testing, and monitoring practices. A detail-oriented and fast learner, committed to delivering maintainable solutions and collaborating effectively across cross-functional teams.`;
 
 export const EXPERIENCES = [
   {

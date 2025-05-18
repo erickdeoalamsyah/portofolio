@@ -3,6 +3,7 @@ import { FaReact } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaCss3Alt, FaGitAlt, FaFlutter } from "react-icons/fa6";
 import { RiTailwindCssFill } from "react-icons/ri";
+import { SiTypescript, SiMongodb, SiMysql, SiPostman, SiDocker, SiPrometheus, SiNextdotjs,  SiGrafana, SiVercel, SiFigma } from "react-icons/si";
 import { FaPython, FaHtml5, FaLaravel, FaNodeJs } from "react-icons/fa";
 import { motion } from "framer-motion";
 
@@ -22,10 +23,20 @@ const iconVariants = (duration) => ({
 const technologies = [
   { icon: <FaReact className="text-blue-500" />, name: "React.js", duration: 2.5 },
   { icon: <IoLogoJavascript className="text-yellow-500" />, name: "JavaScript", duration: 3 },
+  { icon: <SiTypescript className="text-blue-500" />, name: "TypeScript", duration: 2.5 },
   { icon: <FaCss3Alt className="text-blue-500" />, name: "CSS3", duration: 5 },
   { icon: <RiTailwindCssFill className="text-blue-400" />, name: "Tailwind CSS", duration: 3 },
-  { icon: <FaPython className="text-yellow-500" />, name: "Python", duration: 2.5 },
+  { icon: <FaPython className="text-yellow-500" />, name: "Python", duration: 3 },
   { icon: <FaGitAlt className="text-orange-600" />, name: "Git", duration: 2.5 },
+  { icon: <SiMongodb className="text-green-600" />, name: "MongoDB", duration: 3 },
+  { icon: <SiMysql className="text-orange-600" />, name: "mySQL", duration: 2.5 },
+  { icon: <SiPostman className="text-orange-600" />, name: "Postman", duration: 5 },
+  { icon: <SiDocker className="text-blue-600" />, name: "Docker", duration: 2.5 },
+  { icon: <SiPrometheus className="text-orange-600" />, name: "Prometheus", duration: 3 },
+  { icon: <SiGrafana className="text-orange-500" />, name: "Grafana", duration: 2.5 },
+  { icon: <SiVercel className="p-2 text-black bg-gray-300 rounded-lg" />, name: "Vercel", duration: 2.5 },
+  { icon: <SiFigma />, name: "Figma", duration: 2.5 },
+  { icon: <SiNextdotjs className="p-2 text-black bg-gray-300 rounded-lg" />, name: "Next.js", duration: 3},
   { icon: <FaFlutter className="text-blue-600" />, name: "Flutter", duration: 2.5 },
   { icon: <FaHtml5 className="text-orange-500" />, name: "HTML5", duration: 3 },
   { icon: <FaLaravel className="text-orange-900" />, name: "Laravel", duration: 5 },

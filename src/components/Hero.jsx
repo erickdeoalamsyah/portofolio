@@ -53,7 +53,7 @@ export default function PortfolioHero() {
                 As{" "}
                 <span className="bg-gradient-to-r from-blue-500 via-green-400 to-indigo-500 bg-clip-text text-transparent">
                   <Typewriter
-                    words={["FrontEnd Developer", "Mobile Developer"]}
+                    words={["Fullstack Web Developer", "FrontEnd Developer", "Mobile Developer"]}
                     loop={true} 
                     cursor
                     cursorStyle="_"
@@ -114,19 +114,31 @@ export default function PortfolioHero() {
                   <span className="pl-4 text-purple-400">skills:</span> 
                   <span className="text-gray-400">[</span>
                   <span className="text-yellow-300">'React'</span>, 
-                  <span className="text-yellow-300">'NextJS'</span>, 
-                  <span className="text-yellow-300">'Laravel11'</span>, 
+                  <span className="text-yellow-300">'Next.js'</span>, 
+                  <span className="text-yellow-300">'Laravel'</span>, 
+                  <span className="text-yellow-300">'Node.js'</span>, 
+                  <span className="text-yellow-300">'Express.js'</span>, 
+                  <span className="text-yellow-300">'MySql'</span>, 
                   <br />
-                  <span className="pl-8 text-yellow-300">'TailwindCSS'</span>, 
+                  <span className="pl-10 text-yellow-300">'MangoDB'</span>,
+                  <span className="text-yellow-300">'Docker'</span>,
+                  <span className="text-yellow-300">'RESFFul API'</span>,
+                  <span className="text-yellow-300">'Javascript'</span>,
+                  <span className="text-yellow-300">'Typescript'</span>,
+                  <br />
+                  <span className="pl-10 text-yellow-300">'TailwindCSS'</span>, 
+                  <span className="text-yellow-300">'Prometheus'</span>,
+                  <span className="text-yellow-300">'Grafana'</span>,
+                  <span className="text-yellow-300">'JWT'</span>,
                   <span className="text-yellow-300">'API'</span>, 
-                  <span className="text-yellow-300">'JavaScript'</span>, 
                   <span className="text-yellow-300">'Git'</span>
+                  
                   <span className="text-gray-400">]</span>,
                   <br />
-                  <span className="pl-4 text-purple-400">hardWorker:</span> 
+                  <span className="pl-4 text-purple-400">adaptibility:</span> 
                   <span className="text-orange-500"> true</span>,
                   <br />
-                  <span className="pl-4 text-purple-400">quickLearner:</span> 
+                  <span className="pl-4 text-purple-400">fastLearner:</span> 
                   <span className="text-orange-500"> true</span>,
                   <br />
                   <span className="pl-4 text-purple-400">problemSolver:</span> 
